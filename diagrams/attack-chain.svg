@@ -1,0 +1,61 @@
+<svg width="760" height="420" viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#5f6b76" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="760" height="420" fill="#ffffff"/>
+  <text x="380" y="34" text-anchor="middle" font-size="18" font-weight="600" fill="#1f2d3a">Evil-Twin Captive Portal — Attack Chain &amp; Defense Points</text>
+  <text x="380" y="54" text-anchor="middle" font-size="12" fill="#6b7682">Each step is a legitimate feature abused in sequence. Break any one link to defend.</text>
+
+  <!-- chain boxes -->
+  <g font-size="12.5">
+    <rect x="40"  y="90" width="150" height="54" rx="8" fill="#e8f0f9" stroke="#0b4f8a" stroke-width="0.6"/>
+    <text x="115" y="112" text-anchor="middle" font-weight="600" fill="#0b3a66">1 · Rogue AP</text>
+    <text x="115" y="130" text-anchor="middle" fill="#3a5068">victim joins SSID</text>
+
+    <rect x="220" y="90" width="150" height="54" rx="8" fill="#e8f0f9" stroke="#0b4f8a" stroke-width="0.6"/>
+    <text x="295" y="112" text-anchor="middle" font-weight="600" fill="#0b3a66">2 · DHCP</text>
+    <text x="295" y="130" text-anchor="middle" fill="#3a5068">lease + attacker DNS</text>
+
+    <rect x="400" y="90" width="150" height="54" rx="8" fill="#e8f0f9" stroke="#0b4f8a" stroke-width="0.6"/>
+    <text x="475" y="112" text-anchor="middle" font-weight="600" fill="#0b3a66">3 · DNS spoof</text>
+    <text x="475" y="130" text-anchor="middle" fill="#3a5068">all names → attacker</text>
+
+    <rect x="580" y="90" width="150" height="54" rx="8" fill="#e8f0f9" stroke="#0b4f8a" stroke-width="0.6"/>
+    <text x="655" y="112" text-anchor="middle" font-weight="600" fill="#0b3a66">4 · HTTP redirect</text>
+    <text x="655" y="130" text-anchor="middle" fill="#3a5068">to fake portal</text>
+
+    <rect x="310" y="210" width="150" height="54" rx="8" fill="#fbeceb" stroke="#a3302d" stroke-width="0.6"/>
+    <text x="385" y="232" text-anchor="middle" font-weight="600" fill="#7a211f">5 · Fake portal</text>
+    <text x="385" y="250" text-anchor="middle" fill="#8a3b39">harvests input</text>
+  </g>
+
+  <!-- arrows -->
+  <line x1="190" y1="117" x2="218" y2="117" stroke="#5f6b76" stroke-width="1.4" marker-end="url(#arr)"/>
+  <line x1="370" y1="117" x2="398" y2="117" stroke="#5f6b76" stroke-width="1.4" marker-end="url(#arr)"/>
+  <line x1="550" y1="117" x2="578" y2="117" stroke="#5f6b76" stroke-width="1.4" marker-end="url(#arr)"/>
+  <path d="M655 144 L655 185 L385 185 L385 208" fill="none" stroke="#5f6b76" stroke-width="1.4" marker-end="url(#arr)"/>
+
+  <!-- defense points -->
+  <text x="40" y="310" font-size="13" font-weight="600" fill="#0f6e56">Where defenders break the chain</text>
+  <g font-size="12" fill="#1f3a30">
+    <rect x="40"  y="322" width="210" height="72" rx="8" fill="#e1f5ee" stroke="#0f6e56" stroke-width="0.6"/>
+    <text x="52" y="342" font-weight="600" fill="#0b4a3a">Steps 1–2 (network)</text>
+    <text x="52" y="360">• 802.11w / PMF (anti-deauth)</text>
+    <text x="52" y="376">• WIPS rogue-AP detection</text>
+    <text x="52" y="390" font-size="11.5" fill="#3a5e52">• 802.1X server-cert auth</text>
+
+    <rect x="275" y="322" width="210" height="72" rx="8" fill="#e1f5ee" stroke="#0f6e56" stroke-width="0.6"/>
+    <text x="287" y="342" font-weight="600" fill="#0b4a3a">Step 3 (DNS)</text>
+    <text x="287" y="360">• DNS-over-HTTPS / DoT</text>
+    <text x="287" y="376">• OS anti-spoof NXDOMAIN</text>
+    <text x="287" y="390" font-size="11.5" fill="#3a5e52">&#160;&#160;probe</text>
+
+    <rect x="510" y="322" width="210" height="72" rx="8" fill="#e1f5ee" stroke="#0f6e56" stroke-width="0.6"/>
+    <text x="522" y="342" font-weight="600" fill="#0b4a3a">Steps 4–5 (TLS boundary)</text>
+    <text x="522" y="360">• HSTS (preload)</text>
+    <text x="522" y="376">• Cert pinning · VPN</text>
+    <text x="522" y="390" font-size="11.5" fill="#3a5e52">• HTTPS-first OS checks</text>
+  </g>
+</svg>

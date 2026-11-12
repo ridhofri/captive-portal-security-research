@@ -1,0 +1,39 @@
+MIT License
+
+Copyright (c) 2026 Ridhofir Fikri Shodiq
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Materials"), to deal
+in the Materials without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Materials, and to permit persons to whom the Materials are
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Materials.
+
+THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE MATERIALS OR THE USE OR OTHER DEALINGS IN THE
+MATERIALS.
+
+------------------------------------------------------------------------------
+ETHICAL USE NOTICE
+------------------------------------------------------------------------------
+These Materials are documentation, analysis, and defensive guidance for
+educational and authorized security-research purposes only. They intentionally
+contain no deployable attack tooling and no captured data.
+
+Conducting rogue access point ("evil twin") or captive-portal credential-capture
+attacks against networks or people without explicit written authorization is
+illegal in most jurisdictions (including, in Indonesia, under UU ITE and UU PDP;
+and elsewhere under laws such as the US Computer Fraud and Abuse Act and the UK
+Computer Misuse Act).
+
+The author provides these Materials to help practitioners understand and DEFEND
+against such attacks. Any offensive use must occur only within a controlled lab
+you own, or under a signed engagement scope with the owner's written permission.
+You are solely responsible for complying with all applicable laws.
