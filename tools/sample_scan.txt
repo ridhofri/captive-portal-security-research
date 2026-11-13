@@ -1,0 +1,28 @@
+BSS a0:63:91:11:22:33(on wlan0)
+	freq: 2437
+	signal: -42.00 dBm
+	SSID: CampusWiFi
+	RSN:	 * Version: 1
+	capability: ESS Privacy ShortSlotTime (0x0411)
+BSS a0:63:91:11:22:34(on wlan0)
+	freq: 2462
+	signal: -55.00 dBm
+	SSID: CampusWiFi
+	RSN:	 * Version: 1
+	capability: ESS Privacy ShortSlotTime (0x0411)
+BSS 02:4b:13:8f:d3:e1(on wlan0)
+	freq: 2437
+	signal: -38.00 dBm
+	SSID: CampusWiFi
+	capability: ESS ShortSlotTime (0x0401)
+BSS de:ad:be:ef:00:01(on wlan0)
+	freq: 2412
+	signal: -40.00 dBm
+	SSID: Free Airport WiFi
+	capability: ESS ShortSlotTime (0x0401)
+BSS 3c:84:6a:aa:bb:cc(on wlan0)
+	freq: 2412
+	signal: -67.00 dBm
+	SSID: HomeNet-5B2A
+	RSN:	 * Version: 1
+	capability: ESS Privacy ShortSlotTime (0x0411)

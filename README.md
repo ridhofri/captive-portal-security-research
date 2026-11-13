@@ -29,7 +29,9 @@ Anyone can download an evil-twin script. What a rogue-AP study is actually
 
 This repo is deliberately framed around **detection and defense**. The attack
 was performed in a self-contained lab to understand it; the deliverable is the
-knowledge, not a weapon.
+knowledge and a defensive detector, not a weapon. The one piece of runnable
+code here — [`tools/evil_twin_detector.py`](tools/evil_twin_detector.py) —
+*detects* evil twins; it does not create them.
 
 ---
 
@@ -41,6 +43,7 @@ knowledge, not a weapon.
 | [`docs/02-ios-vs-android-detection.md`](docs/02-ios-vs-android-detection.md) | Captive-portal detection on iOS vs Android, with annotated packet captures. Why one resisted a transparent redirect and the other didn't. |
 | [`docs/03-debugging-noprefixroute.md`](docs/03-debugging-noprefixroute.md) | A network-troubleshooting case study: diagnosing silently-dropped SYN-ACKs down to `ifconfig`'s `noprefixroute` behavior. Methodology over tools. |
 | [`docs/04-defense-and-mitigation.md`](docs/04-defense-and-mitigation.md) | How to actually defend against evil-twin / captive-portal attacks — at the AP, the network, and the client. The part that matters for a blue team. |
+| [`tools/evil_twin_detector.py`](tools/evil_twin_detector.py) | **Defensive tool.** A read-only Python scanner (stdlib only) that detects rogue-AP / evil-twin signatures — encryption downgrades, untrusted BSSIDs vs a baseline, spoofed MACs. See [`tools/README.md`](tools/README.md). |
 
 ---
 
